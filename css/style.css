@@ -1,0 +1,190 @@
+body {
+  scroll-behavior: smooth;
+  background: #fff;
+}
+
+.ember322591, #ember322591::before {
+           width: 246px;
+           height: 246px;
+         }
+         .ember322591::before {
+           padding-top: 100%;
+         }
+         
+@media (min-width: 735px) {
+           .ember322591, #ember322591::before {
+           width: 217px;
+           height: 217px;
+         }
+         .ember322591::before {
+           padding-top: 100%;
+         }
+         }
+         
+@media (min-width: 1069px) {
+           .ember322591, #ember322591::before {
+           width: 230px;
+           height: 230px;
+         }
+         .ember322591::before {
+           padding-top: 100%;
+         }
+         }
+
+#company {
+  color: #007aff;
+}
+#ranking {
+  color: #007aff;
+}
+
+#get-btn {
+  background: #007aff;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.column {
+	display: inline-block;
+}
+
+.three-columns > .column {
+	width: 33.33%;
+}
+
+.three-columns > .column:first-of-type {
+	text-align: left;
+}
+
+.three-columns > .column:nth-of-type(2) {
+	text-align: center;
+}
+
+.three-columns > .column:last-of-type {
+	text-align: right;
+}
+
+.hscroll {
+	overflow-y: hidden;
+	z-index: 1;
+}
+
+.hscroll > .overflow-container {
+	height: 100%;
+	padding-bottom: 17px;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.hscroll > .overflow-container > .scroll-item {
+	display: inline-block;
+}
+
+.scroll-assist {
+	display: none;
+	position: absolute;
+	width: 2.5em;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+
+.left.scroll-assist {
+	left: 0;
+}
+
+.right.scroll-assist {
+	right: 0;
+}
+
+.vcenter::before {
+	content: ' ';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	left: 0px;
+}
+
+.vcenter {
+	height: 100%;
+}
+
+.vcenter > .alignment-container, .vcenter > .inline-alignment-container {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.vcenter > .inline-alignment-container {
+	line-height: 0;
+}
+
+/* Header Styles */
+
+header.global {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 250;
+	border-bottom: 1px solid rgba(0, 0, 0, .3019607843);
+	background-color: rgba(0, 0, 0, 0.8);
+
+	backdrop-filter: blur(8px);
+	color: #fff;
+}
+
+html.iframe header.global {
+	display: none;
+}
+
+#nav-bar {
+	font-size: 1.0625rem;
+	height: 2.5882352941em;
+	height: calc(44em / 17);
+	padding: 0 1.1176470588em;
+	padding: 0 calc(19em / 17);
+}
+
+#titletag {
+  color: #fff;
+  font-weight: bolder;
+  left: 0px;
+}
+
+#android {
+  color: #78c257;
+  font-weight: bolder;
+}
+
+#links {
+  font-weight: bolder;
+}
+
+#screenshots {
+  border: 2px solid #000;
+  border-radius: 25px;
+  height: 500px;
+  width: 250px;
+}
+
+#horizontal-ss {
+  border: 2px solid #000;
+  border-radius: 25px;
+  height: 150px;
+  width: 320px;
+}
+
+#paddinghelper {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#rating-badge {
+   color: orange;
+}
+
+#verified {
+   color: #fff;
+}

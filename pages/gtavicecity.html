@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#" dir="ltr" lang="en-GB">
+<head>
+  
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta name="applicable-device" content="pc,mobile">
+
+<script id="perfkit">window.initialPageRequestTime = +new Date();</script>
+
+<link rel="icon" type="image/x-icon" href="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/57/01/fd/5701fd72-a6a2-35db-0710-30a0fb014cc6/AppIcon-0-1x_U007emarketing-85-220-4.png/492x0w.webp">
+
+<link rel="preconnect" href="https://amp-api.apps.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://api-edge.apps.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://is1-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is2-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is3-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is4-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is5-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://xp.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://js-cdn.music.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://www.apple.com" crossorigin="">
+
+<script src="https://kit.fontawesome.com/4ba3c023de.js" crossorigin="anonymous"></script>
+
+<meta name="web-experience-app/config/environment" content="%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222236.5.0%2B834a2639%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3A%22eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlU4UlRZVjVaRFMifQ.eyJpc3MiOiI3TktaMlZQNDhaIiwiaWF0IjoxNjYyNTgzMjY3LCJleHAiOjE2Njk4NDA4NjcsInJvb3RfaHR0cHNfb3JpZ2luIjpbImFwcGxlLmNvbSJdfQ.zcE_dL6GAhslGsXG16I_fZilvqrbtkk8VTFtOLQ0YJJcl7DBUrmk4m5HCSfG5qTI6dGoC5lJenYG2KDunYmXmg%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en-gb%22%2C%22useDevLoc%22%3Afalse%2C%22pathToLocales%22%3A%22dist%2Flocales%22%7D%2C%22MEDIA_ARTWORK%22%3A%7B%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%7D%2C%22API%22%3A%7B%22AppHost%22%3A%22https%3A%2F%2Famp-api.apps.apple.com%22%2C%22AppEventHost%22%3A%22https%3A%2F%2Fapi-edge.apps.apple.com%22%2C%22globalElementsPath%22%3A%22%2Fglobal-elements%22%7D%2C%22fastboot%22%3A%7B%22hostWhitelist%22%3A%5B%7B%7D%5D%7D%2C%22ember-short-number%22%3A%7B%22locales%22%3A%5B%22ar-dz%22%2C%22ar-bh%22%2C%22ar-eg%22%2C%22ar-iq%22%2C%22ar-jo%22%2C%22ar-kw%22%2C%22ar-lb%22%2C%22ar-ly%22%2C%22ar-ma%22%2C%22ar-om%22%2C%22ar-qa%22%2C%22ar-sa%22%2C%22ar-sd%22%2C%22ar-sy%22%2C%22ar-tn%22%2C%22ar-ae%22%2C%22ar-ye%22%2C%22he-il%22%2C%22iw-il%22%2C%22ca-es%22%2C%22cs-cz%22%2C%22da-dk%22%2C%22de-ch%22%2C%22de-de%22%2C%22el-gr%22%2C%22en-au%22%2C%22en-ca%22%2C%22en-gb%22%2C%22en-us%22%2C%22es-419%22%2C%22es-es%22%2C%22es-mx%22%2C%22es-xl%22%2C%22et-ee%22%2C%22fi-fi%22%2C%22fr-ca%22%2C%22fr-fr%22%2C%22hi-in%22%2C%22hr-hr%22%2C%22hu-hu%22%2C%22id-id%22%2C%22is-is%22%2C%22it-it%22%2C%22iw-il%22%2C%22ja-jp%22%2C%22ko-kr%22%2C%22lt-lt%22%2C%22lv-lv%22%2C%22ms-my%22%2C%22nl-nl%22%2C%22no-no%22%2C%22no-nb%22%2C%22nb-no%22%2C%22pl-pl%22%2C%22pt-br%22%2C%22pt-pt%22%2C%22ro-ro%22%2C%22ru-ru%22%2C%22sk-sk%22%2C%22sv-se%22%2C%22th-th%22%2C%22tr-tr%22%2C%22uk-ua%22%2C%22vi-vi%22%2C%22vi-vn%22%2C%22zh-cn%22%2C%22zh-hans%22%2C%22zh-hant%22%2C%22zh-hk%22%2C%22zh-tw%22%2C%22ar%22%2C%22ca%22%2C%22cs%22%2C%22da%22%2C%22de%22%2C%22el%22%2C%22en%22%2C%22es%22%2C%22fi%22%2C%22fr%22%2C%22he%22%2C%22hi%22%2C%22hr%22%2C%22hu%22%2C%22id%22%2C%22is%22%2C%22it%22%2C%22ja%22%2C%22ko%22%2C%22lt%22%2C%22lv%22%2C%22ms%22%2C%22nb%22%2C%22nl%22%2C%22no%22%2C%22pl%22%2C%22pt%22%2C%22ro%22%2C%22ru%22%2C%22sk%22%2C%22sv%22%2C%22th%22%2C%22tr%22%2C%22uk%22%2C%22vi%22%2C%22zh%22%5D%7D%2C%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22METRICS%22%3A%7B%22variant%22%3A%22web%22%2C%22baseFields%22%3A%7B%22appName%22%3A%22web-experience-app%22%2C%22constraintProfiles%22%3A%5B%22AMPWeb%22%5D%7D%2C%22clickstream%22%3A%7B%22enabled%22%3Atrue%2C%22topic%22%3A%5B%22xp_amp_web_exp%22%5D%2C%22autoTrackClicks%22%3Atrue%7D%2C%22performance%22%3A%7B%22enabled%22%3Atrue%2C%22topic%22%3A%22xp_amp_appstore_perf%22%7D%7D%2C%22MEDIA_SHELF%22%3A%7B%22GRID_CONFIG%22%3A%7B%22books-brick-row%22%3A%7B%22small%22%3A1%2C%22medium%22%3A2%2C%22large%22%3A3%7D%7D%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%7D%2C%22SASSKIT_GENERATOR%22%3A%7B%22VIEWPORT_CONFIG%22%3A%7B%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%7D%7D%2C%22features%22%3A%7B%22BUILD_VARIANT_APPS%22%3Atrue%2C%22BUILD_VARIANT_BOOKS%22%3Afalse%2C%22BUILD_VARIANT_FITNESS%22%3Afalse%2C%22BUILD_VARIANT_PODCASTS%22%3Afalse%2C%22BUILD_VARIANT_DEFAULT%22%3Afalse%2C%22TV%22%3Afalse%2C%22PODCASTS%22%3Afalse%2C%22BOOKS%22%3Afalse%2C%22APPS%22%3Atrue%2C%22ARTISTS%22%3Afalse%2C%22DEEPLINK_ROUTE%22%3Afalse%2C%22EMBER_DATA%22%3Afalse%2C%22CHARTS%22%3Atrue%2C%22FITNESS%22%3Afalse%2C%22SHARE_UI%22%3Afalse%2C%22SEPARATE_RTL_STYLESHEET%22%3Atrue%7D%2C%22ember-cli-content-security-policy%22%3A%7B%22policy%22%3A%22default-src%20'none'%3B%20img-src%20'self'%20https%3A%2F%2F*.apple.com%20https%3A%2F%2F*.mzstatic.com%20data%3A%3B%20style-src%20'self'%20https%3A%2F%2F*.apple.com%20'unsafe-inline'%3B%20font-src%20'self'%20https%3A%2F%2F*.apple.com%3B%20media-src%20'self'%20https%3A%2F%2F*.apple.com%20blob%3A%3B%20connect-src%20'self'%20https%3A%2F%2F*.apple.com%20https%3A%2F%2F*.mzstatic.com%3B%20script-src%20'self'%20https%3A%2F%2F*.apple.com%20'unsafe-eval'%20'sha256-4ywTGAe4rEpoHt8XkjbkdOWklMJ%2F1Py%2Fx6b3%2FaGbtSQ%3D'%3B%20frame-src%20'self'%20https%3A%2F%2F*.apple.com%20itmss%3A%20itms-appss%3A%20itms-bookss%3A%20itms-itunesus%3A%20itms-messagess%3A%20itms-podcasts%3A%20itms-watchs%3A%20macappstores%3A%20musics%3A%20apple-musics%3A%20podcasts%3A%20videos%3A%3B%22%2C%22reportOnly%22%3Afalse%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
+
+<link rel="stylesheet preload" name="fonts" href="//www.apple.com/wss/fonts?families=SF+Pro,v2%7CSF+Pro+Icons,v1%7CSF+Pro+Rounded,v1%7CNew+York+Small,v1%7CNew+York+Medium,v1" as="style">
+
+<link rel="stylesheet" type="text/css" href="https://pro-store.vercel.app/css/en_IN-ac-global-nav.f72ef7c49079b2f2be6b8da733dad86e.css" data-global-elements-nav-styles>
+
+<link rel="stylesheet" type="text/css" href="https://pro-store.vercel.app/css/en_IN-ac-global-footer.0de5dfca0e41554444ba8413b4b37cd5.css" data-global-elements-footer-styles>
+
+<meta name="ac-gn-search-suggestions-enabled" content="false" data-global-elements-search-suggestions-enabled>
+
+<script src="https://pro-store.vercel.app/js/read-more"></script>
+
+<title>Grand Theft Auto: Vice City</title>
+
+<!-- Title Ended -->
+
+<!-- Meta Tags Started -->
+<meta name="keywords" content="Grand Theft Auto: Vice City, Android">
+
+<meta name="description" content="To celebrate its 10 year anniversary, Rockstar Games brings Grand Theft Auto: Vice City to mobile devices with high-resolution graphics.">
+
+<link rel="canonical" href="https://pro-store.vercel.app/pages/gtavicecity.html">
+
+<meta name="pro-store-app" content="Gta Vice City">
+
+<meta name="iambhvsh:content_id" content="1387203394">
+
+<meta property="og:title" content="&lrm;Grand Theft Auto: Vice City">
+
+<meta property="og:description" content="&lrm;To celebrate its 10 year anniversary, Rockstar Games brings Grand Theft Auto: Vice City to mobile devices with high-resolution graphics.">
+
+<meta property="og:site_name" content="Pro&nbsp;Store">
+
+<meta property="og:url" content="https://pro-store.vercel.app/pages/gtavicecity.html">
+
+<meta property="og:image" content="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/57/01/fd/5701fd72-a6a2-35db-0710-30a0fb014cc6/AppIcon-0-1x_U007emarketing-85-220-4.png/492x0w.webp">
+
+<meta property="og:image:alt" content="Gta Vice City on the Pro&nbsp;Store">
+
+<meta property="og:image:type" content="image/png">
+
+<meta property="og:image:width" content="250">
+
+<meta property="og:image:height" content="250">
+
+<meta property="og:image:secure_url" content="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/57/01/fd/5701fd72-a6a2-35db-0710-30a0fb014cc6/AppIcon-0-1x_U007emarketing-85-220-4.png/492x0w.webp">
+
+<meta property="og:type" content="website">
+
+<meta property="og:locale" content="en_GB">
+
+<meta name="twitter:title" content="&lrm;Gta Vice City">
+
+<meta name="twitter:description" content="&lrm;Let's bring old memories back.">
+<meta name="twitter:site" content="@iam_bhvsh">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:image" content="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/57/01/fd/5701fd72-a6a2-35db-0710-30a0fb014cc6/AppIcon-0-1x_U007emarketing-85-220-4.png/492x0w.webp">
+
+<meta name="twitter:image:alt" content="Gta Vice City on the Pro&nbsp;Store">
+
+<meta name="version" content="2236.5.0">
+
+<script src="js/amp-musickit.js"></script>
+
+<link integrity="" rel="stylesheet" href="https://apps.apple.com/assets/web-experience-app-real-7a062c0045f8cd3000fee268379541ba.css" data-rtl="https://apps.apple.com/assets/web-experience-app-real-7a062c0045f8cd3000fee268379541ba.css">
+    
+<link rel="stylesheet" href="https://pro-store.vercel.app/css/style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Meta Tags ended -->
+
+</head>
+
+<body class="no-js no-touch">
+  
+<script type="x/boundary" id="fastboot-body-start"></script>
+
+<aside id="ac-gn-segmentbar" class="ac-gn-segmentbar" lang="en-IN" dir="ltr" data-strings="{ &apos;exit&apos;: &apos;Exit&apos;, &apos;view&apos;: &apos;{%STOREFRONT%} Store Home&apos;, &apos;segments&apos;: { &apos;smb&apos;: &apos;&apos;, &apos;eduInd&apos;: &apos;Education Store Home&apos;, &apos;other&apos;: &apos;Store Home&apos; } }"></aside>
+    
+<input type="checkbox" id="ac-gn-menustate" class="ac-gn-menustate">
+
+<!-- Nav Bar Started -->
+
+<header class="global">
+  
+<nav id="nav-bar">
+  
+<div class="localnav-content we-localnav__content">
+  
+<div class="localnav-title we-localnav__title">
+  
+<a href="https://www.apple.com/in/ios/app-store/" data-we-link-to-exclude>
+  
+<span class="we-localnav__title__product" data-test-we-localnav-store-title id="titletag">
+<i class="fab fa-android" id="android"></i> Pro Store</span>
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<br><br>
+
+<!-- Nav Bar Ended -->
+
+<span class="we-localnav__shim" aria-hidden="true"></span>
+
+<label id="localnav-curtain" for="localnav-menustate"></label>
+
+<div class="animation-wrapper is-visible">
+
+<section class="l-content-width section section--hero product-hero">
+  
+<div class="l-row">
+  
+<div class="product-hero__media l-column small-5 medium-4 large-3 small-valign-top">
+      
+<picture class="we-artwork we-artwork--downloaded product-hero__artwork we-artwork--fullwidth we-artwork--ios-app-icon" style="--background-color: #000;" id="ember322591">
+
+<!-- App Logo -->
+
+<source srcset="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/57/01/fd/5701fd72-a6a2-35db-0710-30a0fb014cc6/AppIcon-0-1x_U007emarketing-85-220-4.png/492x0w.webp 492w">
+
+<!-- App Logo Ended -->
+
+<!-- Helper for App Logo -->
+
+<img src="https://pro-store.vercel.app/assets/artwork/1x1-42817eea7ade52607a760cbee00d1495.gif" decoding="async" class="we-artwork__image ember322591 " alt role="presentation" height="246" width="246">
+
+<!-- Helper For App Logo Ended -->
+
+</picture>
+
+</div>
+
+<div class="l-column small-7 medium-8 large-9 small-valign-top">
+  
+<header class="product-header app-header product-header--padded-start">
+        
+<!-- App Title -->
+
+<h1 class="product-header__title app-header__title">Grand Theft Auto: Vice City
+
+<span class="badge badge--product-title">12+</span>
+
+</h1>
+
+<h2 class="product-header__identity app-header__identity">
+  
+<a dir="auto">Rockstar Games</a>
+
+<br>
+
+#7 in Adventure
+
+
+</h2>
+
+<ul class="product-header__list app-header__list">
+  <!---->
+  <li class="product-header__list__item app-header__list__item--user-rating">
+    <ul class="inline-list inline-list--mobile-compact">
+      <li class="inline-list__item">
+        <figure class="we-star-rating" aria-label="4.5 out of 5">
+          <span class="we-star-rating-stars-outlines">
+            <span class="we-star-rating-stars we-star-rating-stars-4"></span>
+          </span>
+          <figcaption class="we-rating-count star-rating__count">4.5 • 12.9K Ratings</figcaption>
+        </figure>
+
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<ul class="product-header__list app-header__list">
+
+<li class="product-header__list__item">
+  
+<ul class="inline-list inline-list--mobile-compact">
+
+<li class="inline-list__item inline-list__item--bulleted app-header__list__item--in-app-purchase">
+
+<a href="https://spaces.apkmody.io/v2/download/vbYK"><button
+id="get-btn">&#160;&#160;Obb +&#160;&#160;</button></a>
+
+&#160;
+<a href="https://spaces.apkmody.io/v2/download/v3lL"><button
+id="get-btn">&#160;&#160;Apk +&#160;&#160;</button></a>
+
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</header>
+
+</div>
+
+</div>
+  
+</section>
+
+<section class="l-content-width section section--bordered">
+  
+<h2 class="section__headline">Screenshots</h2>
+
+<div class="we-screenshot-viewer">
+  
+<div class="we-screenshot-viewer__screenshots">
+  
+<ul class="l-row l-row--peek we-screenshot-viewer__screenshots-list">
+  
+<li>
+  
+<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/22/65/da/2265daea-e4b7-8f68-039e-5b4826faabf2/pr_source.jpg/1286x0w.webp" class="we-artwork__image ember322592  we-artwork__image--lazyload" id="horizontal-ss">
+ 
+</li>
+ 
+<li id="paddinghelper">&#160;&#160;</li>
+ 
+<li>
+
+<img src="https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/37/08/76/37087677-5555-d882-503e-9ba0170c9b61/pr_source.jpg/1286x0w.webp" class="we-artwork__image ember322592  we-artwork__image--lazyload" id="horizontal-ss">
+
+</li>
+
+<li id="paddinghelper">&#160;&#160;</li>
+
+<li>
+
+<img src="https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/51/48/ad/5148ad57-ca85-6c52-4b60-cf560db76204/pr_source.jpg/1286x0w.webp" class="we-artwork__image ember322592  we-artwork__image--lazyload" id="horizontal-ss">
+
+</li>
+
+<li id="paddinghelper">&#160;&#160;</li>
+
+<li>
+
+<img src="https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/21/32/02/213202b5-9e35-9286-688c-7a17c4a700d7/pr_source.jpg/1286x0w.webp" class="we-artwork__image ember322592  we-artwork__image--lazyload" id="horizontal-ss">
+
+</li>
+
+<li id="paddinghelper">&#160;&#160;</li>
+
+<li>
+
+<img src="https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/bc/68/bd/bc68bdfa-0dba-a1a3-6a85-2aca4d335fab/pr_source.jpg/1286x0w.webp" class="we-artwork__image ember322592  we-artwork__image--lazyload" id="horizontal-ss">
+
+</li>
+
+<style>
+
+.ember322592, #ember322592::before {
+width: 300px;
+height: 649px;
+         }
+
+.ember322592::before {
+padding-top: 216.33333333333334%;
+}
+@media (min-width: 735px) {
+
+.ember322592, #ember32259::before {
+width: 157px;
+height: 339px;
+         }
+.ember322592::before {
+padding-top: 215.92356687898092%;
+         }
+         }
+@media (min-width: 1069px) {
+           .ember322592, #ember322592::before {
+           width: 230px;
+           height: 497px;
+         }
+         .ember322592::before {
+           padding-top: 216.08695652173915%;
+         }
+         }
+
+#screenshots {
+  height: 200;
+}
+</style>
+  
+</picture>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="l-content-width section section--bordered">
+  
+<div class="section__description">
+  
+<h2 class="section__headline visuallyhidden">Description</h2>
+
+<div class="l-row">
+  
+<div class="we-truncate we-truncate--multi-line we-truncate--interactive  l-column small-12 medium-9 large-8" dir>
+
+<h1 class="whats-new__headline">Installation Process</h1>
+
+<p dir="false" data-test-bidi>
+
+<br>
+
+For installation process
+download the Obb file and move
+the Obb file at this source
+Android/Obb.
+
+<br>
+
+But due to the new rule we can
+access Android folder in Android
+11 or Later so for that 
+
+<a href="https://storage.evozi.com/apk/dl/19/12/11/me.zhanghai.android.files_23.apk">Click here</a>
+
+to download the Material
+Files app and allow all the
+permissions after that go in the
+three live (Nav Bar) now click
+on (+ Add storage) after that
+click on (Android/Obb) and allow
+the permission for use this
+folder and the you can access
+the Obb section then move the
+Obb files there. 
+
+<br>
+
+If you have any problem with
+this contact us at 
+
+<a href="https://t.me/iambhvshchat">@iambhvshchat</a>
+
+on Telegram.
+
+<br><br>
+
+<h1 class="whats-new__headline">
+Description
+</h1>
+
+<br><br>
+
+Welcome back to Vice City.
+Welcome back to the 1980s.
+
+<br><br>
+
+From the decade of big hair, excess and pastel suits comes a story of one man's rise to the top of the criminal pile. Vice City, a huge urban sprawl ranging from the beach to the swamps and the glitz to the ghetto, was one of the most varied, complete and alive digital cities ever created. Combining open-world gameplay with a character driven narrative, you arrive in a town brimming with delights and degradation and given the opportunity to take it over as you choose.
+
+<br><br>
+
+To celebrate its 10 year anniversary, Rockstar Games brings Grand Theft Auto: Vice City to mobile devices with high-resolution graphics, updated controls and a host of new features including:
+
+<br><br>
+
+• Beautifully updated graphics, character models and lighting effects
+
+<br>
+
+• New, precisely tailored firing and targeting options
+
+<br>
+
+• Custom controls with a fully customizable layout
+
+<br>
+
+• iCloud save game support
+
+<br>
+
+• Massive campaign with countless hours of gameplay
+
+<br>
+
+• Support for Retina display devices
+
+<br>
+
+• Custom iTunes Playlist*
+
+<br><br>
+
+*To listen to your custom playlist, simply create a playlist titled “VICECITY”, launch the game, and select the radio station “Tape Deck”
+
+<br><br>
+
+Universal App:
+
+<br>
+
+Grand Theft Auto: Vice City is supported on iPhone 4, iPhone 4S, iPhone 5, all iPad models and 4th and 5th generation iPod Touch.
+
+<br><br>
+
+For optimal performance, we recommend re-booting your device after downloading and closing other applications when playing Grand Theft Auto: Vice City.
+
+<br><br>
+
+Languages Supported: English, French, Italian, German, Spanish, Korean, Russian, and Japanese.
+
+<br><br>
+
+Mobile Version developed by War
+Drum Studios
+
+<br>
+
+www.wardrumstudios.com
+
+<br><br>
+
+Find out more:
+
+<br>
+
+www.rockstargames.com
+
+<br><br>
+
+See videos:
+
+<br>
+
+www.youtube.com/rockstargames
+
+<br><br>
+
+Follow us:
+
+<br>
+
+www.faceboook.com/rockstargames
+
+<br>
+
+www.twitter.com/rockstargames
+  
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="l-content-width section section--bordered whats-new">
+  
+<div class="section__nav section__nav--small">
+  
+<h2 class="whats-new__headline">What’s New</h2>
+
+<div class="version-history">
+
+</div>
+
+</div>
+
+<div class="l-row whats-new__content">
+  
+<div class="l-column small-12 medium-3 large-4 small-valign-top whats-new__latest">
+  
+<div class="l-row">
+
+<time data-test-we-datetime datetime="2022-09-19T00:00:00.000Z" aria-label="19 September 2022" class="" >19 Sept 2022</time>
+
+<p class="l-column small-6 medium-12 whats-new__latest__version">Version 253.0</p>
+
+</div>
+
+</div>
+
+<div class="l-column small-12 medium-9 large-8 small-valign-top">
+
+<div class="we-truncate we-truncate--multi-line we-truncate--interactive " dir>
+
+<p dir="false" data-test-bidi>The latest version contains bug fixes and performance improvements.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="l-content-width section section--bordered">
+
+<div class="section__nav">
+
+<h2 class="section__headline">
+          Ratings and Reviews
+</h2>
+
+</div>
+
+<div class="we-customer-ratings lockup">
+  
+<div class="l-row">
+
+<div class="we-customer-ratings__stats l-column small-4 medium-6 large-4">
+
+<div class="we-customer-ratings__averages">
+
+<span class="we-customer-ratings__averages__display">4.5</span> out of 5</div>
+
+<div class="we-customer-ratings__count small-hide medium-show">12.9K Ratings</div></div>
+
+<div class=" l-column small-8 medium-6 large-4">
+  
+<figure class="we-star-bar-graph">
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--5"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 65%;"></div>
+
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--4"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 10%;"></div>
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--3"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 3%;"></div>
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--2"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 2%;"></div>
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars "></span>
+
+<div class="we-star-bar-graph__bar">
+  
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 3%;"></div>
+</div></div>
+
+</figure>
+
+<p class="we-customer-ratings__count medium-hide">3.4M Ratings</p>
+    
+</div>
+
+    </div>
+    
+        </div>
+
+<div class="l-row l-row--peek">
+
+<div id="ember322598" class="small-valign-top l-column--equal-height l-column small-4 medium-6 large-4">
+
+<div></div>
+
+<div aria-labelledby="we-customer-review-22864" class="we-customer-review lockup">
+
+<figure class="we-star-rating we-customer-review__rating we-star-rating--large" aria-label="5 out of 5">
+
+<span class="we-star-rating-stars-outlines">
+
+<span class="we-star-rating-stars we-star-rating-stars-4"></span></span>
+
+</figure>
+
+<div class="we-customer-review__header we-customer-review__header--user">
+
+<span class="we-truncate we-truncate--single-line  we-customer-review__user" dir="ltr">
+    Piyush Turak
+</span>
+
+<span class="we-customer-review__separator">, </span>
+
+<time data-test-customer-review-date datetime="2022-02-03T01:23:13.000Z" aria-label="2 February 2022" class="we-customer-review__date">09/02/2022</time>
+
+</div>
+
+<h3 class="we-truncate we-truncate--single-line  we-customer-review__title" dir="ltr" id="we-customer-review-22864">Grand Best Auto
+</h3>
+
+<blockquote class="we-truncate we-truncate--multi-line we-truncate--interactive  we-customer-review__body" dir>
+
+<p dir="false" data-test-bidi>
+
+I personally think that this is the best GTA game in the franchise. This game has free roam, 80's nostalgia, and a great storyline. This game has what a lot of other games lacked back in the early 2000's. I really hope that games today will have a great impact on the upcoming games to be released, like this game did with games today. My only complaint about this games is the control style. I know that a lot of other people would say that the graphics are outdated, but I don't think that a game should be based on its graphics, it's based on it's impact it has on the player. I really hope that Rockstar Games will keep trying to improve the gaming industry. Overall I give this game 9/10. It is a great game and if you have never played and you're an open minded person I strongly suggest to give this game a try.
+
+</p>
+
+</blockquote>
+
+</div></div>
+
+<div id="ember322600" class="small-valign-top l-column--equal-height l-column small-4 medium-6 large-4">
+  
+<div></div>
+
+<div aria-labelledby="we-customer-review-22865" class="we-customer-review lockup">
+  
+<figure class="we-star-rating we-customer-review__rating we-star-rating--large" aria-label="4 out of 5">
+  
+<span class="we-star-rating-stars-outlines">
+  
+<span class="we-star-rating-stars we-star-rating-stars-5"></span></span>
+
+</figure>
+
+<div class="we-customer-review__header we-customer-review__header--user">
+  
+<span class="we-truncate we-truncate--single-line  we-customer-review__user" dir="ltr">Steve Roother
+</span>
+
+<span class="we-customer-review__separator">, </span>
+
+<time data-test-customer-review-date datetime="2020-10-20T05:00:26.000Z" aria-label="19 October 2020" class="we-customer-review__date" >19/10/2020</time>
+
+</div>
+
+<h3 class="we-truncate we-truncate--single-line  we-customer-review__title" dir="ltr" id="we-customer-review-22865">
+Vice City Lives On!
+</h3>
+
+<blockquote class="we-truncate we-truncate--multi-line we-truncate--interactive  we-customer-review__body" dir>
+  
+<p dir="false" data-test-bidi>
+
+Great port to mobile! My only gripe is I had a glitch after completing 30% of the game. For some reason the controls wouldn’t switch to regular walking mode after going to the hardware store. The controls were fine when driving cars but when walking it only had the left and right arrows and the purchase button. Nothing I could to would revert away from the store purchase mode. I tried dying, killing the hardware guy, buying from other stores, loading previously saved games, offloading the game and re downloading, and it still wouldn’t go back to normal. I eventually just straight up deleted everything and reinstalled and of course that worked. I made the mistake of not saving my game to the cloud slot otherwise I’d be good. So if this happens to you, save your game to the cloud slot, delete everything, and reinstall. Also save very frequently just in case. The other thing I wanted to ask that would make the game greater would be a dual analog option. That would be nice for driving so you can control your speed and braking much better. Maybe I am the only one that wants this? I just think it would make it better. Worth the money!
+
+</p>
+
+</blockquote>
+
+</div></div>
+
+<div id="ember322602" class="small-valign-top l-column--equal-height l-column small-4 medium-6 large-4">
+
+<div></div>
+
+<div aria-labelledby="we-customer-review-22866" class="we-customer-review lockup">
+  
+<figure class="we-star-rating we-customer-review__rating we-star-rating--large" aria-label="2 out of 5">
+  
+<span class="we-star-rating-stars-outlines">
+
+<span class="we-star-rating-stars we-star-rating-stars-5">
+</span></span>
+
+</figure>
+
+<div class="we-customer-review__header we-customer-review__header--user">
+  
+<span class="we-truncate we-truncate--single-line  we-customer-review__user" dir="ltr">
+  
+    Sojwal Patil
+</span>
+
+<span class="we-customer-review__separator">, </span>
+
+<time data-test-customer-review-date datetime="2022-07-07T13:17:41.000Z" aria-label="7 July 2022" class="we-customer-review__date" >07/08/2022</time>
+
+</div>
+
+<h3 class="we-truncate we-truncate--single-line  we-customer-review__title" dir="ltr" id="we-customer-review-22866">
+Brings back all old memories a
+nostalagic 
+
+<br>
+
+feels Vice City = Best
+
+</h3>
+
+<blockquote class="we-truncate we-truncate--multi-line we-truncate--interactive  we-customer-review__body" dir>
+
+<p dir="false" data-test-bidi>
+  
+So, Gta Vice City is one of the most memorable and fun games out there. Although, It does have some bugs. First, Whenever you try to get one of the special cars from the sunshine autos and a police is nearby, You will get a police level when you enter the Deluxo, Sabre Turbo, Sandking, And Hotring Racer. So, if you could fix this, it would be good. Next, If you have the accelerometer on, and if you’re in a car, then in a mission or finished a mission, If you hit the gas, the car will uncontrollably go left for NO reason. Sure, you can turn it off to make it go away, but you could still fix this. Another thing is that the hitboxes of trees, (especially palm trees) are quite large, and the problem I have with that is that, When I land a helicopter, then try to fly it again, and the back rotor or the rotor above will get stuck. I sometimes push it about two in-game meters, but the hitbox still prevents me from flying it. So please fix this as well. But even though there are several bugs and more, GTA Vice City Is stil a great game. In the future you could maybe port more Rockstar games onto mobile.
+
+</p>
+
+</blockquote>
+
+</div></div></div>
+
+<div class="l-row l-row--margin-top medium-hide">
+</div>
+
+</section>
+
+<section class="l-content-width section section--bordered app-privacy">
+
+<div class="section__nav">
+  
+<h2 class="section__headline section__headline--app-privacy">App Privacy
+</h2>
+
+<div class="app-privacy--modal privacy-type--modal">
+</div></div>
+
+<p>
+The developer,
+<span class="app-privacy__developer-name">Rockstar Games,</span>
+
+has not provided details about
+its privacy practices and
+handling of data to Pro Store.
+
+For more information, see the
+
+<br>
+
+<a href="http://www.rockstargames.com/privacy">developer’s privacy policy</a>.
+
+</p>
+
+<p class="app-privacy__learn-more">Privacy practices may vary based on, for example, the features you use or your age. 
+
+<a href="story/id1538632801.html">Learn More</a>
+
+</p>
+
+</section>
+
+<section class="l-content-width section section--bordered section--information">
+  
+<div>
+
+<h2 class="section__headline">Information</h2>
+
+<dl class="information-list information-list--app medium-columns l-row">
+  
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Provider</dt>
+
+<dd class="information-list__item__definition">
+  Rockstar Games, Inc.
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Size</dt>
+
+<dd class="information-list__item__definition" aria-label="228.1 megabytes">1.5 GB</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Category</dt>
+
+<dd class="information-list__item__definition">
+
+<a>Games</a>
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Compatibility</dt>
+
+<dd class="information-list__item__definition">
+
+<dl class="information-list__item__definition__item">
+
+<dt class="information-list__item__definition__item__term">Android
+</dt>
+
+<dd class="information-list__item__definition__item__definition">Requires Android 8 or later
+</dd>
+
+</dl>
+
+<dl class="information-list__item__definition__item">
+
+<dt class="information-list__item__definition__item__term">Custom Rom Support
+</dt>
+
+<dd class="information-list__item__definition__item__definition">Yes
+</dd>
+
+</dl>
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Languages</dt>
+
+<dd class="we-truncate we-truncate--multi-line we-truncate--interactive  information-list__item__definition" dir>
+
+<p data-test-bidi>
+English, French, German, Italian, Japanese, Korean, Russian, Spanish</p>
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Age Rating</dt>
+
+<dd class="information-list__item__definition">12+
+
+<span class="information-list__item__definition">Infrequent/Mild Profanity or Crude Humour</span>
+
+<span class="information-list__item__definition">Infrequent/Mild Sexual Content and Nudity</span>
+
+<span class="information-list__item__definition">Infrequent/Mild Mature/Suggestive Themes</span>
+
+<span class="information-list__item__definition">Infrequent/Mild Alcohol, Tobacco, or Drug Use or References</span>
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Copyright</dt>
+
+<dd class="information-list__item__definition information-list__item__definition--copyright">© 2012 Rockstar Games</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Price</dt>
+
+<dd class="information-list__item__definition">Free</dd>
+
+</div>
+
+
+
+</ol>
+
+</dd>
+
+</div>
+
+</dl>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+</div>
+
+<footer id="ac-globalfooter" class="no-js" role="contentinfo" lang="en-IN" dir="ltr">
+
+<div class="ac-gf-content">
+
+<section class="ac-gf-footer">
+  
+<div class="ac-gf-footer-shop" x-ms-format-detection="none">
+  Pro Store | iambhvsh
+
+</span>
+
+</div>
+
+<div class="ac-gf-footer-locale">
+
+<div class="ac-gf-footer-legal">
+
+<div class="ac-gf-footer-legal-copyright">
+  
+Copyright &#xA9; 2022 iambhvsh All rights reserved.
+
+</div>
+
+<div class="ac-gf-footer-legal-links">
+
+<a class="ac-gf-footer-legal-link" href="https://iambhvsh.vercel.app" data-analytics-title="website">
+  
+iambhvsh
+
+</a>
+
+<a class="ac-gf-footer-legal-link" href="https://iambhvshofficial.t.me/" data-analytics-title="telegram">
+  
+  Telegram
+  
+</a>
+  
+<a class="ac-gf-footer-legal-link" href="https://www.instagram.com/iambhvsh" data-analytics-title="instagram">
+  
+  Instagram
+  
+</a>
+
+<a class="ac-gf-footer-legal-link" href="https://www.twitter.com/iam_bhvsh" data-analytics-title="twitter">
+  
+  Twitter
+  
+</a>
+
+<a class="ac-gf-footer-legal-link" href="https://github.com/ProOsStore" data-analytics-title="github">
+  
+  Github
+  
+</a>
+
+</div></div>
+
+</section>
+
+</div>
+
+</footer>
+
+<div id="modal-container"></div>
+
+<script src="https://apps.apple.com/us/app/apple-books/id364709193/assets/chunk.309.848d97fb43af54a66969.js"></script>
+
+<script src="https://apps.apple.com/us/app/apple-books/id364709193/assets/chunk.143.204bfe9b47ffd52ecbcf.js"></script>
+
+<script integrity="" src="https://apps.apple.com/us/app/apple-books/id364709193/assets/web-experience-app-5d3968f5df320ac708011b5151a56a0c.js" data-app-legacy-src="" nomodule></script>
+
+
+<script type="application/ld+json" data-test-seo-data-org="apps">
+
+    {
+      "@context": "https://schema.org",
+      "@id": "https://apps.apple.com/#organization",
+      "@type": "Organization",
+      "name": "Pro Store",
+      "url": "https://apps.apple.com/",
+      "logo": "assets/images/knowledge-graph/apps.png",
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q368215",
+        "https://twitter.com/iam_bhvsh"
+      ],
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "iambhvsh",
+        "@id": "https://iambhvsh.vercel.app/"
+      }
+    }
+    
+  </script>
+  
+</body>
+
+</html>

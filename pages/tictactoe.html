@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#" dir="ltr" lang="en-GB">
+<head>
+  
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<meta name="applicable-device" content="pc,mobile">
+
+<script id="perfkit">window.initialPageRequestTime = +new Date();</script>
+
+<link rel="icon" type="image/x-icon" href="https://assetss.vercel.app/images/tictactoe.webp">
+
+<link rel="preconnect" href="https://amp-api.apps.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://api-edge.apps.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://is1-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is2-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is3-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is4-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://is5-ssl.mzstatic.com" crossorigin="">
+
+<link rel="preconnect" href="https://xp.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://js-cdn.music.apple.com" crossorigin="">
+
+<link rel="preconnect" href="https://www.apple.com" crossorigin="">
+
+<script src="https://kit.fontawesome.com/4ba3c023de.js" crossorigin="anonymous"></script>
+
+<meta name="web-experience-app/config/environment" content="%7B%22appVersion%22%3A1%2C%22modulePrefix%22%3A%22web-experience-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history-hash-router-scroll%22%2C%22historySupportMiddleware%22%3Atrue%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22PROGRESS_BAR_DELAY%22%3A3000%2C%22CLOCK_INTERVAL%22%3A1000%2C%22LOADING_SPINNER_SPY%22%3Atrue%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22buildVariant%22%3A%22apps%22%2C%22name%22%3A%22web-experience-app%22%2C%22version%22%3A%222236.5.0%2B834a2639%22%7D%2C%22MEDIA_API%22%3A%7B%22token%22%3A%22eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlU4UlRZVjVaRFMifQ.eyJpc3MiOiI3TktaMlZQNDhaIiwiaWF0IjoxNjYyNTgzMjY3LCJleHAiOjE2Njk4NDA4NjcsInJvb3RfaHR0cHNfb3JpZ2luIjpbImFwcGxlLmNvbSJdfQ.zcE_dL6GAhslGsXG16I_fZilvqrbtkk8VTFtOLQ0YJJcl7DBUrmk4m5HCSfG5qTI6dGoC5lJenYG2KDunYmXmg%22%7D%2C%22i18n%22%3A%7B%22defaultLocale%22%3A%22en-gb%22%2C%22useDevLoc%22%3Afalse%2C%22pathToLocales%22%3A%22dist%2Flocales%22%7D%2C%22MEDIA_ARTWORK%22%3A%7B%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%7D%2C%22API%22%3A%7B%22AppHost%22%3A%22https%3A%2F%2Famp-api.apps.apple.com%22%2C%22AppEventHost%22%3A%22https%3A%2F%2Fapi-edge.apps.apple.com%22%2C%22globalElementsPath%22%3A%22%2Fglobal-elements%22%7D%2C%22fastboot%22%3A%7B%22hostWhitelist%22%3A%5B%7B%7D%5D%7D%2C%22ember-short-number%22%3A%7B%22locales%22%3A%5B%22ar-dz%22%2C%22ar-bh%22%2C%22ar-eg%22%2C%22ar-iq%22%2C%22ar-jo%22%2C%22ar-kw%22%2C%22ar-lb%22%2C%22ar-ly%22%2C%22ar-ma%22%2C%22ar-om%22%2C%22ar-qa%22%2C%22ar-sa%22%2C%22ar-sd%22%2C%22ar-sy%22%2C%22ar-tn%22%2C%22ar-ae%22%2C%22ar-ye%22%2C%22he-il%22%2C%22iw-il%22%2C%22ca-es%22%2C%22cs-cz%22%2C%22da-dk%22%2C%22de-ch%22%2C%22de-de%22%2C%22el-gr%22%2C%22en-au%22%2C%22en-ca%22%2C%22en-gb%22%2C%22en-us%22%2C%22es-419%22%2C%22es-es%22%2C%22es-mx%22%2C%22es-xl%22%2C%22et-ee%22%2C%22fi-fi%22%2C%22fr-ca%22%2C%22fr-fr%22%2C%22hi-in%22%2C%22hr-hr%22%2C%22hu-hu%22%2C%22id-id%22%2C%22is-is%22%2C%22it-it%22%2C%22iw-il%22%2C%22ja-jp%22%2C%22ko-kr%22%2C%22lt-lt%22%2C%22lv-lv%22%2C%22ms-my%22%2C%22nl-nl%22%2C%22no-no%22%2C%22no-nb%22%2C%22nb-no%22%2C%22pl-pl%22%2C%22pt-br%22%2C%22pt-pt%22%2C%22ro-ro%22%2C%22ru-ru%22%2C%22sk-sk%22%2C%22sv-se%22%2C%22th-th%22%2C%22tr-tr%22%2C%22uk-ua%22%2C%22vi-vi%22%2C%22vi-vn%22%2C%22zh-cn%22%2C%22zh-hans%22%2C%22zh-hant%22%2C%22zh-hk%22%2C%22zh-tw%22%2C%22ar%22%2C%22ca%22%2C%22cs%22%2C%22da%22%2C%22de%22%2C%22el%22%2C%22en%22%2C%22es%22%2C%22fi%22%2C%22fr%22%2C%22he%22%2C%22hi%22%2C%22hr%22%2C%22hu%22%2C%22id%22%2C%22is%22%2C%22it%22%2C%22ja%22%2C%22ko%22%2C%22lt%22%2C%22lv%22%2C%22ms%22%2C%22nb%22%2C%22nl%22%2C%22no%22%2C%22pl%22%2C%22pt%22%2C%22ro%22%2C%22ru%22%2C%22sk%22%2C%22sv%22%2C%22th%22%2C%22tr%22%2C%22uk%22%2C%22vi%22%2C%22zh%22%5D%7D%2C%22ember-cli-mirage%22%3A%7B%22enabled%22%3Afalse%2C%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%2C%22METRICS%22%3A%7B%22variant%22%3A%22web%22%2C%22baseFields%22%3A%7B%22appName%22%3A%22web-experience-app%22%2C%22constraintProfiles%22%3A%5B%22AMPWeb%22%5D%7D%2C%22clickstream%22%3A%7B%22enabled%22%3Atrue%2C%22topic%22%3A%5B%22xp_amp_web_exp%22%5D%2C%22autoTrackClicks%22%3Atrue%7D%2C%22performance%22%3A%7B%22enabled%22%3Atrue%2C%22topic%22%3A%22xp_amp_appstore_perf%22%7D%7D%2C%22MEDIA_SHELF%22%3A%7B%22GRID_CONFIG%22%3A%7B%22books-brick-row%22%3A%7B%22small%22%3A1%2C%22medium%22%3A2%2C%22large%22%3A3%7D%7D%2C%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%7D%2C%22SASSKIT_GENERATOR%22%3A%7B%22VIEWPORT_CONFIG%22%3A%7B%22BREAKPOINTS%22%3A%7B%22large%22%3A%7B%22min%22%3A1069%2C%22max%22%3A1440%2C%22content%22%3A980%7D%2C%22medium%22%3A%7B%22min%22%3A735%2C%22max%22%3A1068%2C%22content%22%3A692%7D%2C%22small%22%3A%7B%22min%22%3A320%2C%22max%22%3A734%2C%22content%22%3A280%7D%7D%7D%7D%2C%22features%22%3A%7B%22BUILD_VARIANT_APPS%22%3Atrue%2C%22BUILD_VARIANT_BOOKS%22%3Afalse%2C%22BUILD_VARIANT_FITNESS%22%3Afalse%2C%22BUILD_VARIANT_PODCASTS%22%3Afalse%2C%22BUILD_VARIANT_DEFAULT%22%3Afalse%2C%22TV%22%3Afalse%2C%22PODCASTS%22%3Afalse%2C%22BOOKS%22%3Afalse%2C%22APPS%22%3Atrue%2C%22ARTISTS%22%3Afalse%2C%22DEEPLINK_ROUTE%22%3Afalse%2C%22EMBER_DATA%22%3Afalse%2C%22CHARTS%22%3Atrue%2C%22FITNESS%22%3Afalse%2C%22SHARE_UI%22%3Afalse%2C%22SEPARATE_RTL_STYLESHEET%22%3Atrue%7D%2C%22ember-cli-content-security-policy%22%3A%7B%22policy%22%3A%22default-src%20'none'%3B%20img-src%20'self'%20https%3A%2F%2F*.apple.com%20https%3A%2F%2F*.mzstatic.com%20data%3A%3B%20style-src%20'self'%20https%3A%2F%2F*.apple.com%20'unsafe-inline'%3B%20font-src%20'self'%20https%3A%2F%2F*.apple.com%3B%20media-src%20'self'%20https%3A%2F%2F*.apple.com%20blob%3A%3B%20connect-src%20'self'%20https%3A%2F%2F*.apple.com%20https%3A%2F%2F*.mzstatic.com%3B%20script-src%20'self'%20https%3A%2F%2F*.apple.com%20'unsafe-eval'%20'sha256-4ywTGAe4rEpoHt8XkjbkdOWklMJ%2F1Py%2Fx6b3%2FaGbtSQ%3D'%3B%20frame-src%20'self'%20https%3A%2F%2F*.apple.com%20itmss%3A%20itms-appss%3A%20itms-bookss%3A%20itms-itunesus%3A%20itms-messagess%3A%20itms-podcasts%3A%20itms-watchs%3A%20macappstores%3A%20musics%3A%20apple-musics%3A%20podcasts%3A%20videos%3A%3B%22%2C%22reportOnly%22%3Afalse%7D%2C%22exportApplicationGlobal%22%3Afalse%7D">
+
+<link rel="stylesheet preload" name="fonts" href="www.apple.com/wss/fonts?families=SF+Pro,v2%7CSF+Pro+Icons,v1%7CSF+Pro+Rounded,v1%7CNew+York+Small,v1%7CNew+York+Medium,v1" as="style">
+
+<title>Tic Tac Toe</title>
+
+<!-- Title Ended -->
+
+<!-- Meta Tags Started -->
+<meta name="keywords" content="Tic Tac Toe on Pro Store, Tic, Tac, Toe, Pro, Store, Pro Store, Vercel, Android, App Store, Apple, Microsoft, Skype, Google, ios, Samsung, Rog, Asus, Lava, Nokia, Bts, Tech, Technology, Play, Store, Play Store, Lenevo">
+
+<meta name="description" content="Have Less storage ? No worries we bring Tic Tac Toe which you can run in browser or Download our app only on Pro Store.">
+
+<link rel="canonical" href="https://pro-store.vercel.app/pages/tictactoe.html">
+
+<meta name="pro-store-app" content="Tic-Tac-Toe">
+
+<meta name="iambhvsh:content_id" content="1387203399">
+
+<meta property="og:title" content="&lrm;Tic Tac Toe">
+
+<meta property="og:description" content="&lrm;Have Less storage ? No worries we bring Tic Tac Toe which you can run in browser or Download our app only on Pro Store.">
+
+<meta property="og:site_name" content="Pro&nbsp;Store">
+
+<meta property="og:url" content="https://pro-store.vercel.app/pages/tictactoe.html">
+
+<meta property="og:image" content="https://assetss.vercel.app/images/tictactoe.webp">
+
+<meta property="og:image:alt" content="Tic Tac Toe on the Pro&nbsp;Store">
+
+<meta property="og:image:type" content="image/png">
+
+<meta property="og:image:width" content="250">
+
+<meta property="og:image:height" content="250">
+
+<meta property="og:image:secure_url" content="https://assetss.vercel.app/images/tictactoe.webp">
+
+<meta property="og:type" content="website">
+
+<meta property="og:locale" content="en_GB">
+
+<meta name="twitter:title" content="&lrm;Tic Tac Toe">
+
+<meta name="twitter:description" content="&lrm;Have Less storage ? No worries we bring Tic Tac Toe which you can run in browser or Download our app only on Pro Store.">
+<meta name="twitter:site" content="@iam_bhvsh">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:image" content="https://assetss.vercel.app/images/tictactoe.webp">
+
+<meta name="twitter:image:alt" content="Tic Tac Toe on the Pro&nbsp;Store">
+
+<meta name="version" content="2.0">
+
+<script src="js/amp-musickit.js"></script>
+
+<link integrity="" rel="stylesheet" href="https://apps.apple.com/assets/web-experience-app-real-dbd473efe43a05e17612ef416418be21.css" data-rtl="https://apps.apple.com/assets/web-experience-app-real-dbd473efe43a05e17612ef416418be21.css">
+
+<link rel="stylesheet" href="webexp.cs">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Meta Tags ended -->
+
+<link rel="stylesheet" href="https://assetss.vercel.app/css/style.css">
+
+</head>
+
+<body class="no-js no-touch">
+  
+<script type="x/boundary" id="fastboot-body-start"></script>
+
+<!-- Nav Bar Started -->
+
+<header>
+
+<div class="navbar">
+
+<a href="#home">Pro Store</a>
+
+</div>
+
+</header>
+
+<!-- Nav Bar Ended -->
+
+<br><br><br><br>
+
+<span class="we-localnav__shim" aria-hidden="true"></span>
+
+<label id="localnav-curtain" for="localnav-menustate"></label>
+
+<div class="animation-wrapper is-visible">
+
+<section class="l-content-width section section--hero product-hero">
+  
+<div class="l-row">
+  
+<div class="product-hero__media l-column small-5 medium-4 large-3 small-valign-top">
+
+<picture class="we-artwork we-artwork--downloaded product-hero__artwork we-artwork--fullwidth we-artwork--ios-app-icon" style="--background-color: #000;" id="ember322591">
+
+<!-- App Logo -->
+
+<source srcset="https://assetss.vercel.app/images/tictactoe.webp 492w">
+
+<!-- App Logo Ended -->
+
+<!-- Helper for App Logo -->
+
+<img src="https://pro-store.vercel.app/assets/artwork/1x1-42817eea7ade52607a760cbee00d1495.gif" decoding="async" class="we-artwork__image ember322591 " alt role="presentation" height="246" width="246">
+
+<!-- Helper For App Logo Ended -->
+
+</picture>
+
+</div>
+
+<div class="l-column small-7 medium-8 large-9 small-valign-top">
+  
+<header class="product-header app-header product-header--padded-start">
+        
+<!-- App Title -->
+
+<h1 class="product-header__title app-header__title">
+
+Tic Tac Toe
+
+<span class="badge badge--product-title">4+</span>
+
+</h1>
+
+<h2 class="product-header__identity app-header__identity">
+  
+<a dir="auto">
+  
+Yash Kolhe
+
+</a>
+
+<br>
+
+#58 in Games
+
+
+</h2>
+
+<ul class="product-header__list app-header__list">
+
+<li class="product-header__list__item app-header__list__item--user-rating">
+
+<ul class="inline-list inline-list--mobile-compact">
+
+<li class="inline-list__item">
+
+<figure class="we-star-rating" aria-label="4.2 out of 5">
+
+<span class="we-star-rating-stars-outlines">
+
+<span class="we-star-rating-stars we-star-rating-stars-4"></span>
+
+</span>
+
+<figcaption class="we-rating-count star-rating__count">4.2 • 504 Ratings
+
+</figcaption>
+
+</figure>
+
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<ul class="product-header__list app-header__list">
+
+<li class="product-header__list__item">
+  
+<ul class="inline-list inline-list--mobile-compact">
+
+<li class="inline-list__item inline-list__item--bulleted app-header__list__item--in-app-purchase">
+
+<a href="https://drive.google.com/file/d/19g8sqgKDlBM0TdReexsX74DioUGFXS8l/view?usp=drivesdk">
+  
+<button id="get-btn">
+&#160;&#160;Get +&#160;&#160;</button></a>
+
+</li>
+
+</ul>
+
+</li>
+
+</ul>
+
+</header>
+
+</div>
+
+</div>
+  
+</section>
+
+<section class="l-content-width section section--bordered">
+
+<style>
+  
+#horizontal-ss {
+  height: 450px;
+  width: 240px;
+  border: 2px solid #000;
+}
+  
+</style>
+
+<h2 class="section__headline">Screenshots</h2>
+
+<div class="we-screenshot-viewer">
+  
+<div class="we-screenshot-viewer__screenshots">
+  
+<ul class="l-row l-row--peek we-screenshot-viewer__screenshots-list">
+
+<li>
+  
+<img src="https://assetss.vercel.app/images/tictactoe2.webp" class="we-artwork__image ember322592  we-artwork__image--lazyload" id="horizontal-ss">
+ 
+</li>
+ 
+<li id="paddinghelper">&#160;&#160;</li>
+
+<li>
+
+  <img src="https://assetss.vercel.app/images/tictactoe1.webp" class="we-artwork__image ember322592  we-artwork__image--lazyload" id="horizontal-ss">
+
+</li>
+
+<style>
+
+.ember322592, #ember322592::before {
+width: 300px;
+height: 649px;
+}
+
+.ember322592::before {
+padding-top: 216.33333333333334%;
+}
+@media (min-width: 735px) {
+
+.ember322592, #ember32259::before {
+width: 157px;
+height: 339px;
+}
+.ember322592::before {
+padding-top: 215.92356687898092%;
+}
+}
+@media (min-width: 1069px) {
+.ember322592, #ember322592::before {
+width: 230px;
+height: 497px;
+}
+.ember322592::before {
+padding-top: 216.08695652173915%;
+}
+}
+
+#screenshots {
+  height: 200;
+}
+</style>
+  
+</picture>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="l-content-width section section--bordered">
+  
+<div class="section__description">
+  
+<h2 class="section__headline visuallyhidden">Description</h2>
+
+<div class="l-row">
+  
+<div class="we-truncate we-truncate--multi-line we-truncate--interactive  l-column small-12 medium-9 large-8" dir>
+
+<h1 class="whats-new__headline">
+Description
+</h1>
+
+<br>
+
+Have Less storage ? No worries we bring Tic Tac Toe which you can run in browser or Download our app only on 
+
+<br>
+
+Pro Store.
+
+<br><br>
+
+Try the Preview 
+
+<a href="https://pro-store.vercel.app/pages/tictactoe.html">@tictactoe on browser</a>.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="l-content-width section section--bordered whats-new">
+  
+<div class="section__nav section__nav--small">
+  
+<h2 class="whats-new__headline">What’s New</h2>
+
+<div class="version-history">
+
+</div>
+
+</div>
+
+<div class="l-row whats-new__content">
+  
+<div class="l-column small-12 medium-3 large-4 small-valign-top whats-new__latest">
+  
+<div class="l-row">
+
+<time data-test-we-datetime datetime="2022-09-19T00:00:00.000Z" aria-label="19 September 2022" class="" >19 Sept 2022</time>
+
+<p class="l-column small-6 medium-12 whats-new__latest__version">Version 2.0</p>
+
+</div>
+
+</div>
+
+<div class="l-column small-12 medium-9 large-8 small-valign-top">
+
+<div class="we-truncate we-truncate--multi-line we-truncate--interactive " dir>
+
+<p dir="false" data-test-bidi>
+
+Bug fixes and performance improvements</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="l-content-width section section--bordered">
+
+<div class="section__nav">
+
+<h2 class="section__headline">
+
+Ratings and Reviews
+
+</h2>
+
+</div>
+
+<div class="we-customer-ratings lockup">
+  
+<div class="l-row">
+
+<div class="we-customer-ratings__stats l-column small-4 medium-6 large-4">
+
+<div class="we-customer-ratings__averages">
+
+<span class="we-customer-ratings__averages__display">4.2</span> out of 5</div>
+
+<div class="we-customer-ratings__count small-hide medium-show">2.5M Ratings</div></div>
+
+<div class=" l-column small-8 medium-6 large-4">
+  
+<figure class="we-star-bar-graph">
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--5"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 50%;"></div>
+
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--4"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 15%;"></div>
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--3"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 3%;"></div>
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars we-star-bar-graph__stars--2"></span>
+
+<div class="we-star-bar-graph__bar">
+
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 0%;"></div>
+</div></div>
+
+<div class="we-star-bar-graph__row">
+
+<span class="we-star-bar-graph__stars "></span>
+
+<div class="we-star-bar-graph__bar">
+  
+<div class="we-star-bar-graph__bar__foreground-bar" style="width: 1%;">
+  
+</div>
+
+</div></div>
+
+</figure>
+
+<p class="we-customer-ratings__count medium-hide">
+
+504 Ratings</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="l-row l-row--peek">
+  
+<div></div>
+
+<div aria-labelledby="we-customer-review-22865" class="we-customer-review lockup">
+  
+<figure class="we-star-rating we-customer-review__rating we-star-rating--large" aria-label="2 out of 5">
+  
+<span class="we-star-rating-stars-outlines">
+  
+<span class="we-star-rating-stars we-star-rating-stars-5"></span></span>
+
+</figure>
+
+<div class="we-customer-review__header we-customer-review__header--user">
+  
+<span class="we-truncate we-truncate--single-line  we-customer-review__user" dir="ltr">
+
+Bhavesh Patil
+
+<!-- Verified User -->
+
+<div class="tooltip">
+
+<span class="tooltiptext">Verified</span>
+
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="15" height="15"
+viewBox="0 0 48 48"
+style=" fill:#000000;">
+
+<circle cx="24" cy="24" r="20" fill="#007aff"></circle>
+
+<path fill="#fff" d="M22.491,30.69c-0.576,0-1.152-0.22-1.591-0.659l-6.083-6.084c-0.879-0.878-0.879-2.303,0-3.182 c0.878-0.879,2.304-0.879,3.182,0l6.083,6.084c0.879,0.878,0.879,2.303,0,3.182C23.643,30.47,23.067,30.69,22.491,30.69z"></path>
+
+<path fill="#fff" d="M22.491,30.69c-0.576,0-1.152-0.22-1.591-0.659c-0.879-0.878-0.879-2.303,0-3.182l9.539-9.539 c0.878-0.879,2.304-0.879,3.182,0c0.879,0.878,0.879,2.303,0,3.182l-9.539,9.539C23.643,30.47,23.067,30.69,22.491,30.69z"></path>
+</svg>
+
+<!-- Verified User Ended -->
+
+</span>
+
+</div>
+
+<h3 class="we-truncate we-truncate--single-line  we-customer-review__title" dir="ltr" id="we-customer-review-22865">
+
+<br>
+
+This Game is Great 🥰
+
+</h3>
+
+<blockquote class="we-truncate we-truncate--multi-line we-truncate--interactive  we-customer-review__body" dir>
+  
+<p dir="false" data-test-bidi>
+
+I got suggested about your Game by
+my 
+
+<br>
+
+colleague and when i installed your 
+
+Game 
+
+<br>
+
+i played this and this is 
+the best Game to 
+
+<br>
+
+play in No-Time just need one improvement 
+
+<br>
+
+in the Game please make a button in the 
+
+<br>
+
+Game that pauses and the other button 
+
+<br>
+that saves the Game, That would be better 
+
+<br>
+
+to continue our progress later.
+
+</p>
+
+</blockquote>
+
+</div></div>
+
+</section>
+
+<section class="l-content-width section section--bordered app-privacy">
+
+<div class="section__nav">
+  
+<h2 class="section__headline section__headline--app-privacy">App Privacy
+</h2>
+
+<div class="app-privacy--modal privacy-type--modal">
+</div></div>
+
+<p>
+The developer,
+<span class="app-privacy__developer-name">Yash Kolhe,</span>
+
+indicated that the app’s privacy
+practices may include handling of
+data as described below.
+
+<br><br>
+
+• Internet
+
+<br>
+
+• Storage 
+
+</section>
+
+<section class="l-content-width section section--bordered section--information">
+  
+<div>
+
+<h2 class="section__headline">Information</h2>
+
+<dl class="information-list information-list--app medium-columns l-row">
+  
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Provider</dt>
+
+<dd class="information-list__item__definition">
+  
+ Yash Kolhe
+ 
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Size</dt>
+
+<dd class="information-list__item__definition" aria-label="228.1 megabytes">
+  
+  4.5 MB
+  
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">
+  
+Category
+
+</dt>
+
+<dd class="information-list__item__definition">
+
+<a>Game's </a>
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Compatibility</dt>
+
+<dd class="information-list__item__definition">
+
+<dl class="information-list__item__definition__item">
+
+<dt class="information-list__item__definition__item__term">Android
+</dt>
+
+<dd class="information-list__item__definition__item__definition">Requires Android 4 or later
+</dd>
+
+</dl>
+
+<dl class="information-list__item__definition__item">
+
+<dt class="information-list__item__definition__item__term">
+  
+Custom Rom Support
+
+</dt>
+
+<dd class="information-list__item__definition__item__definition">
+  
+Yes
+
+</dd>
+
+</dl>
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Languages</dt>
+
+<dd class="we-truncate we-truncate--multi-line we-truncate--interactive  information-list__item__definition" dir>
+
+<p data-test-bidi>
+English</p>
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Age Rating</dt>
+
+<dd class="information-list__item__definition">4+
+
+</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Copyright</dt>
+
+<dd class="information-list__item__definition information-list__item__definition--copyright">© 2022 Android.Os-Store. All rights reserved.</dd>
+
+</div>
+
+<div class="information-list__item l-column small-12 medium-6 large-4 small-valign-top">
+
+<dt class="information-list__item__term medium-valign-top">Price</dt>
+
+<dd class="information-list__item__definition">Free</dd>
+
+</div>
+
+
+
+</ol>
+
+</dd>
+
+</div>
+
+</dl>
+
+</div>
+
+</section>
+
+</div>
+
+</main>
+
+</div>
+
+<footer>
+
+<!-- All Footer Content -->
+
+<section class="l-content-width section section--bordered section--information">
+
+<center>
+
+<p class="web-title">
+  
+Pro Store
+
+</p>
+
+<br>
+
+<a href="https://iambhvsht.vercel.app" id="link" data-analytics-title="website">
+  
+iambhvsht
+
+</a>
+
+&#160;
+
+<a class="ac-gf-footer-legal-link" href="https://iambhvshofficial.t.me/" data-analytics-title="telegram" id="link">
+
+  Telegram
+
+</a>
+
+&#160;
+
+<a class="ac-gf-footer-legal-link" href="https://www.instagram.com/iambhvsh" data-analytics-title="instagram" id="link">
+
+  Instagram
+
+</a>
+
+&#160;
+
+<a class="ac-gf-footer-legal-link" href="https://www.twitter.com/iam_bhvsh" data-analytics-title="twitter" id="link">
+
+  Twitter
+
+</a>
+
+&#160;
+
+<a class="ac-gf-footer-legal-link" href="https://github.com/ProOsStore" data-analytics-title="github" id="link">
+
+  Github
+
+</a>
+
+&#160;
+
+<a class="ac-gf-footer-legal-link" href="https://docu.vercel.app" data-analytics-title="github" id="link">
+
+  Blogs
+
+</a>
+
+<br>
+
+<a class="ac-gf-footer-legal-link" href="https://forms.gle/sJs3SWBGj4nXYDRV7" data-analytics-title="github" id="link">
+
+  Submit your App
+
+</a>
+
+<br><br>
+
+<span>
+  
+Copyright &#xA9; 2022 iambhvsh All rights reserved.
+  
+</span>
+
+</center>
+
+</section>
+
+<!-- All Footer Content Ended -->
+
+</footer>
+
+<div id="modal-container"></div>
+
+<script src="https://apps.apple.com/us/app/apple-books/id364709193/assets/chunk.309.848d97fb43af54a66969.js"></script>
+
+<script src="https://apps.apple.com/us/app/apple-books/id364709193/assets/chunk.143.204bfe9b47ffd52ecbcf.js"></script>
+
+<script integrity="" src="https://apps.apple.com/us/app/apple-books/id364709193/assets/web-experience-app-5d3968f5df320ac708011b5151a56a0c.js" data-app-legacy-src="" nomodule></script>
+
+
+<script type="application/ld+json" data-test-seo-data-org="apps">
+
+{
+"@context": "https://schema.org",
+"@id": "https://pro-store.vercel.app",
+"@type": "Organization",
+"name": "Pro Store",
+"url": "https://pro-store.vercel.app",
+"logo": "https://pro-store.vercel.app/favicon.ico",
+"sameAs": [
+"https://pro-store.vercel.app",
+"https://twitter.com/iam_bhvsh"
+],
+"parentOrganization": {
+"@type": "Organization",
+"name": "Pro Store",
+"@id": "https://pro-store.vercel.app/"
+}
+}
+
+</script>
+  
+</body>
+
+</html>
